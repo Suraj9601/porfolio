@@ -1,0 +1,88 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Container for buttons */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-one,
+.line-two {
+    display: flex;
+    gap: 20px;
+}
+
+/* Button Styles */
+.btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    user-select: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Color-specific styles */
+.red {
+    background-color: #e74c3c;
+}
+
+.yellow {
+    background-color: #f1c40f;
+    color: #333;
+}
+
+.green {
+    background-color: #2ecc71;
+}
+
+.purple {
+    background-color: #9b59b6;
+}
+
+/* Active/flash effect (you can add this in JS) */
+.flash {
+    opacity: 0.5;
+}
